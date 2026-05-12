@@ -1,6 +1,6 @@
 {
   "agent_pack": {
-    "repo_url": "https://github.com/SenseTime-FVG/agent_pack.git",
+    "repo_url": "https://github.com/OpenSenseNova/agent_pack.git",
     "branch": "main",
     "cn_mirrors": [
       "https://ghproxy.cn/",

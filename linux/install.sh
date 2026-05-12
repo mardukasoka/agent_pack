@@ -34,10 +34,10 @@ _ap_usage() {
 Usage: bash install.sh [options]
 
 Interactive install:
-  bash <(curl -fsSL https://raw.githubusercontent.com/SenseTime-FVG/agent_pack/main/linux/install.sh)
+  bash <(curl -fsSL https://raw.githubusercontent.com/OpenSenseNova/agent_pack/main/linux/install.sh)
 
 Non-interactive install:
-  bash <(curl -fsSL https://raw.githubusercontent.com/SenseTime-FVG/agent_pack/main/linux/install.sh) \
+  bash <(curl -fsSL https://raw.githubusercontent.com/OpenSenseNova/agent_pack/main/linux/install.sh) \
     --yes --product hermes --provider openrouter --api-key sk-...
 
 Options:
@@ -178,9 +178,9 @@ fi
 if [ "$INTERACTIVE_MODE" -eq 1 ] && [ ! -t 0 ]; then
     echo "[!] Interactive install needs a terminal for prompts." >&2
     echo "    Use:" >&2
-    echo "      bash <(curl -fsSL https://raw.githubusercontent.com/SenseTime-FVG/agent_pack/main/linux/install.sh)" >&2
+    echo "      bash <(curl -fsSL https://raw.githubusercontent.com/OpenSenseNova/agent_pack/main/linux/install.sh)" >&2
     echo "    Or run unattended with:" >&2
-    echo "      bash <(curl -fsSL https://raw.githubusercontent.com/SenseTime-FVG/agent_pack/main/linux/install.sh) --yes [options]" >&2
+    echo "      bash <(curl -fsSL https://raw.githubusercontent.com/OpenSenseNova/agent_pack/main/linux/install.sh) --yes [options]" >&2
     exit 1
 fi
 
@@ -188,7 +188,7 @@ fi
 # This bootstrap can't read config/defaults.json yet (we haven't fetched it),
 # so the repo URL + CN mirrors are duplicated here as a minimal bootstrap.
 # Keep the mirror list in sync with config/defaults.json (agent_pack.cn_mirrors).
-AGENT_PACK_REPO="https://github.com/SenseTime-FVG/agent_pack.git"
+AGENT_PACK_REPO="https://github.com/OpenSenseNova/agent_pack.git"
 if [ ! -d "$LIB_DIR" ]; then
     echo "[*] Downloading Agent Pack installer..."
     TMPDIR=$(mktemp -d)

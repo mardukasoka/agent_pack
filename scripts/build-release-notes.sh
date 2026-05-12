@@ -27,7 +27,7 @@ TAG="$1"
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
-REPO_SLUG="${GITHUB_REPOSITORY:-SenseTime-FVG/agent_pack}"
+REPO_SLUG="${GITHUB_REPOSITORY:-OpenSenseNova/agent_pack}"
 
 # Hand-written override wins.
 if [ -f "$PROJECT_ROOT/RELEASE_NOTES.md" ]; then
